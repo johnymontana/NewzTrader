@@ -37,16 +37,17 @@ def removeNonAscii(s): return "".join(i for i in s if ord(i)<128)
 
 def get_headlines(newsDate):
     
-    
+    news={}
     year = newsDate.year
     month = newsDate.month
     day = newsDate.day
+    news[newsDate]=[]
     path = "http://api.newscred.com/articles?access_key=c4bcc3f7c9bf9ec159f51da0a86ca658&sources=104afa30d811d37a5582a39e1662a311&pagesize=99&from_date=%d-%d-%d&to_date=%d-%d-%d 23:59:59" % (year, month, day, year, month, day)
     while True:
         try:
             root = etree.parse(path)
             break
-        except etree.XMLSyntaxError:
+        except XMLSyntaxError:
             pass
     myRoot = root.getroot()
 
