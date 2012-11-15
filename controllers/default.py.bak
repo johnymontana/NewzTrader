@@ -22,7 +22,7 @@ def index():
     """
     response.flash = "Welcome to web2py!"
     todaysNews = get_headlines(date.today())
-    return dict(news=todaysNews)
+    return dict(message=T('Hello World'))
     
 def daterange(start_date, end_date):
     for n in range(int ((end_date - start_date).days)):
