@@ -15,11 +15,6 @@
 {{=A(T("Disclaimer"), _href=URL('NewzTrader','default','disclaimer'), _class='button',
      _style='margin-top: 1em;')}}
 {{=A(T("Today's Newz"), _href=URL('NewzTrader', 'default', 'newz'), _class='button', _style='margin-top: lem;')}}
+{{=A(T("Visualizations"), _href=URL('NewzTrader', 'defaullt', 'visual'), _class='button', _style='margin-top: lem;')}}
 
-<h6>{{=T("Don't know what to do?")}}</h6>
-<ul>
-  <li>{{=A(T("Online examples"), _href=URL('examples','default','index'))}}</li>
-  <li><a href="http://web2py.com">web2py.com</a></li>
-  <li><a href="http://web2py.com/book">{{=T('Documentation')}}</a></li>
-</ul>
 {{end}}

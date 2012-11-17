@@ -1,7 +1,7 @@
 {{left_sidebar_enabled,right_sidebar_enabled=False,True}}
 {{extend 'layout.html'}}
 
-{{if 'message' in globals():}}
+{{#if 'message' in globals():}}
 <h3>{{=message}}</h3>
 
 <h4/>{{=T('How did you get here?')}}</h4>
